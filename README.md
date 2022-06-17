@@ -1,5 +1,5 @@
 ***Project description***
-A payments site like Zelle, paypal, venmo ect. Users will be able to register, and send payments to other registered users. Users will see a public feed of who has sent a payment.
+A payments site like Zelle, paypal, venmo ect. Users will be able to sign up and send payments to other users who have done so. A public feed of who has sent a payment will be visible to users. For the front end and back end, we used Java, JavaScript, CSS, and HTML, for the database MongoDB, and for the API platform, we used Postman.
 
     2 Collections in database
         Collection to store transactions/payments
