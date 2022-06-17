@@ -1,24 +1,27 @@
 ***Project description***
 A simple payments site like Zelle, paypal, venmo ect. Users will be able to register, and send payments to other registered users. Users will see a public feed of who has sent a payment.
-***2 Collections in database***
-***Collection to store transactions/payments***
-to
-from
-amount
-type
-notes ( allow user to type in a description)
-***Users Collection***
-Username
-Password
-***UI***
-Display a feed of public transactions
-Create a signup form to create a username/password combo
-Only allow payments to valid users
-***Backend***
-Register endpoint
-Lookup valid user endpoint
-Make payment endpoint
-Get feed endpoint
+
+    2 Collections in database
+        Collection to store transactions/payments
+            to
+            from
+            amount
+            type
+            notes ( allow user to type in a description)
+    Users Collection
+        Username
+        Password
+        
+    UI
+        Display a feed of public transactions
+        Create a signup form to create a username/password combo
+        Only allow payments to valid users
+        
+    Backend
+        Register endpoint
+        Lookup valid user endpoint
+        Make payment endpoint
+        Get feed endpoint
 
 ***How to Install***
 skip
