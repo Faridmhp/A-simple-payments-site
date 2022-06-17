@@ -1,0 +1,87 @@
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+
+<<<<<<< Updated upstream
+function register() {
+      // state Variables
+    const [Rusername, setUserName] = React.useState('');
+=======
+function Register() {
+    // state Variables
+    const [Rusername, setUserName] = React.useState(''); 
+>>>>>>> Stashed changes
+    const [Rpassword, setPassword] = React.useState('');
+    const [RisLoggedIn, setIsLoggedIn] = React.useState(false);
+    const [Rerror, setError] = React.useState(null);
+
+    // navigate variable TO NAVIGATE THE PAGE BACK TO THE HOME AFTER REGISTERED
+    let navigate = useNavigate();
+
+    const handleSubmit = () => {
+            const body = {
+                username: Rusername,
+                password: Rpassword,
+            };
+            const settings = {
+                method: 'post',
+                body: JSON.stringify(body),
+            };
+            console.log("%s", Rusername)
+<<<<<<< Updated upstream
+            fetch('/register', settings)
+                        .then(res => res.json())
+                        .then(data => {
+                            if (data.isLoggedIn) {
+                                setIsLoggedIn(true);
+                            } else if (data.error) {
+                                setError(data.error);
+                            }
+                            console.log("send")
+                        })
+                        .catch(e => console.log(e));
+=======
+        fetch('/register', settings)
+            .then(res => res.json())
+            .then(data => {
+                if (data.isLoggedIn) {
+                    setIsLoggedIn(true);
+                } else if (data.error) {
+                    setError(data.error);
+                }
+                console.log("send")
+            })
+            .catch(e => console.log(e));
+    };
+>>>>>>> Stashed changes
+
+    if(RisLoggedIn){
+        return (<div className="container"><h1> Welcome , { Rusername }! </h1> </div>);
+    }
+
+<<<<<<< Updated upstream
+        if(RisLoggedIn){
+            return (<div className="container"><h1> Welcome , { Rusername }! </h1> </div>);
+        }
+
+=======
+>>>>>>> Stashed changes
+return (
+        <div className="container">
+            <h2>Register</h2>
+                <input type="text" id="user-input" className="type" placeholder="Username" required name="username"
+                    value={Rusername}
+                    onChange={(event) => setUserName(event.target.value)}>
+                </input>
+                <br></br>
+                <input id="pass-input" type="password" className="type" placeholder="Password" required name="password"
+                    value={Rpassword}
+                    onChange={(event) => setPassword(event.target.value)}>
+                </input>
+                {Rerror}
+                <br></br>
+                <button className="submit" onClick={ handleSubmit }>register</button>
+        </div>
+    );
+}
+
+export default Register;
