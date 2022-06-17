@@ -1,50 +1,17 @@
-***Project description***
+# Payments site
 A payments site like Zelle, paypal, venmo ect. Users will be able to sign up and send payments to other users who have done so. A public feed of who has sent a payment will be visible to users. For the front end and back end, we used Java, JavaScript, CSS, and HTML, for the database MongoDB, and for the API platform, we used Postman.
 
-    2 Collections in database
-        Collection to store transactions/payments
-            to
-            from
-            amount
-            type
-            notes ( allow user to type in a description)
-    Users Collection
-        Username
-        Password
-        
-    UI
-        Display a feed of public transactions
-        Create a signup form to create a username/password combo
-        Only allow payments to valid users
-        
-    Backend
-        Register endpoint
-        Lookup valid user endpoint
-        Make payment endpoint
-        Get feed endpoint
+# What I Learned
+* Developed a user interface using JavaScript, CSS, and HTML, React.
+* Implemented functinality to the UI: 
+  * display a feed of public transactions,
+  * Create a signup form to create a username/password combo
+  * Only allow payments to valid users
+* Collection to store transactions/payments
 
-***How to Install***
-skip
 
-***How to use:***
 
-***Register:***
-    The username and password should be enter, no rule but can't keep empty
-    
-***Login:***
-    Must be registed
-    
-***Check Payment:***
-    Show all payments
-    
-***Cash Payment:***
-    All shoud be enter, the amount have character shows error
-    
-***Credit Payment:***
-    all shoud be enter, the amount have character shows error;
-    number is card number(but no rule here, can be just any number)
-    security number is card security number(but no rule here, can be just any number)
-    
+
 ***Contributors:***
 @MissingKings1
 @Congchengz
