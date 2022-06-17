@@ -1,5 +1,5 @@
 ***Project description***
-A simple payments site like Zelle, paypal, venmo ect. Users will be able to register, and send payments to other registered users. Users will see a public feed of who has sent a payment.
+A payments site like Zelle, paypal, venmo ect. Users will be able to register, and send payments to other registered users. Users will see a public feed of who has sent a payment.
 
     2 Collections in database
         Collection to store transactions/payments
